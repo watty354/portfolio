@@ -196,7 +196,7 @@ if (isset($_REQUEST['res'])) {
             $("#item-left").append('<img src="member_picture/<?php print(htmlspecialchars($member['picture'], ENT_QUOTES)); ?>" alt="<?php print(htmlspecialchars($member['name'], ENT_QUOTES)); ?>">');
 
             $("#item-right").append('<p><?php print(htmlspecialchars($member['name'], ENT_QUOTES)); ?></p><p>' + data.message + ' </p> <a><p style="background-color: #0D6EFD;color: #fff;border-radius: 3px;padding: 5px;" >新規投稿しました！</p>');
-
+            $('textarea').val(""); 
 
 
             console.log(data)
