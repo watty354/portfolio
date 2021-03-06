@@ -94,7 +94,6 @@ if (!empty($_POST)) {
       </form>
 
       <div class="my-3"><a href="join.php">新規登録はこちらから</a></div>
-      <div class="my-3"><a href="forget.php">パスワードを忘れた方へ</a></div>
     </div>
   </section>
 

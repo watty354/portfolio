@@ -14,27 +14,19 @@ $_POST['id'],
    $_POST['message'],
    $_POST['reply']
     ));
-} 
+
+    $messages = $db->query('SELECT l.name, l.picture, m.* FROM login_member l, messages m WHERE l.id=m.member_id ORDER BY m.created DESC');
+
+
+
+    header('Content-Type: application/json; charset=utf-8',);
+    echo json_encode(['id' => $id, 'message' => $_POST['message'], 'reply' => $reply]);
+
+} else {
+  header('Content-Type: application/json; charset=utf-8',);
+
 }
-
-
-
-
-header('Content-Type: application/json; charset=utf-8',);
-echo json_encode($productList);
-
-// $_SESSION = array();
-// if (ini_set('session.use_cookies')) {
-//  $params = session_get_cookie_params();
-//  setcookie(session_name() . '' , time() - 42000,
-//  $params['path'],$params['domain'],$params['secure'],$params['httponly']);
-// }
-// session_destroy();
-
-// setcookie('email','', time()-3600);
-
-// header('Location:index.php');
-// exit();
+} 
 
 
 ?>
