@@ -78,7 +78,7 @@ exit();
           </div>
   
           
-          <div class="btn btn-secondary rewite mb-3"><a href="join.php?action=rewrite">&laquo;&nbsp;編集する</a> </div>
+          <div class="btn btn-success rewited mb-3"><a href="join.php?action=rewrite" style="color: #fff;  text-decoration: none;">&laquo;&nbsp;編集する</a> </div>
           <div><input type="submit" class="btn btn-primary" value=ログインする /></div>
   
         </form>
